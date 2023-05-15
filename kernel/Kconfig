@@ -17,8 +17,8 @@ config KSU_DEBUG
 	  Enable KernelSU debug mode.
 
 config KSU_SAFE_MODE
-	int "KernelSU Safe Mode"
-	default 0
+	bool "KernelSU Safe Mode"
+	default n
 	depends on KSU
 	help
 	  This enables KernelSU Safe Mode.
