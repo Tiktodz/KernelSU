@@ -132,4 +132,9 @@
     <string name="flashing">Pasang</string>
     <string name="flash_failed">Pemasangan Gagal</string>
     <string name="save_log">Simpan Log</string>
+
+    <!-- Unofficial build -->
+    <string name="unofficial_build">Pembuatan tidak resmi oleh ∂σткιт</string>
+    <string name="unofficial_build_by">https://github.com/Tiktodz/KernelSU</string>
+    <string name="unofficial_build_description">KernelSU resmi tidak lagi mendukung kernel non-GKI sejak v1.0.0</string>
 </resources>

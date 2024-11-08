@@ -133,4 +133,9 @@
     <string name="selected_lkm">Selected LKM: %s</string>
     <string name="save_log">Save logs</string>
     <string name="log_saved">Logs saved</string>
+
+    <!-- Unofficial build -->
+    <string name="unofficial_build">Unofficial build by ∂σткιт</string>
+    <string name="unofficial_build_by">https://github.com/Tiktodz/KernelSU</string>
+    <string name="unofficial_build_description">Official KernelSU no longer supports non-GKI kernels since v1.0.0</string>
 </resources>
