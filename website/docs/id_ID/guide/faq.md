@@ -46,3 +46,9 @@ Ada kemungkinan, KernelSU sudah di-backport ke kernel 4.14 sekarang, untuk kerne
 ## Cara mengintegrasikan KernelSU untuk kernel lama?
 
 Silakan merujuk ke [guide](how-to-integrate-for-non-gki)
+
+## Mengapa ada file 512G yang besar?
+
+`modules.img` berukuran 512G adalah file gambar disk, **jangan khawatir tentang ukurannya**, ini adalah jenis file khusus yang dikenal sebagai [file jarang](https://en.wikipedia.org/ wiki/Sparse_file), ukuran sebenarnya hanya sebesar modul yang Anda gunakan, dan akan menyusut secara dinamis setelah Anda menghapus modul; itu sebenarnya tidak menempati ruang disk 512G (sebenarnya ponsel Anda mungkin tidak memiliki banyak ruang).
+
+Jika Anda benar-benar tidak puas dengan ukuran file ini, Anda dapat menggunakan perintah `resize2fs -M` untuk menjadikannya ukuran sebenarnya; namun modul tersebut mungkin tidak berfungsi dengan baik saat ini, dan kami tidak akan memberikan dukungan apa pun untuk hal ini.
