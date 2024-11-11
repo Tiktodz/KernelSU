@@ -362,7 +362,7 @@ fn _install_module(zip: &str) -> Result<()> {
         humansize::format_size(zip_uncompressed_size, humansize::DECIMAL)
     );
 
-    let sparse_image_size = 512 * (1 << 30); // 512G
+    let sparse_image_size = 512 * (1 << 20); // 512M
     let journal_size = 8; // 8M
     if !modules_img_exist && !modules_update_img_exist {
         // if no modules and modules_update, it is brand new installation, we should create a new img
